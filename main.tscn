@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dtaupowuk177h"]
+[gd_scene load_steps=3 format=3 uid="uid://dtaupowuk177h"]
 
-[ext_resource type="Script" uid="uid://dg4p5vdxwnv44" path="res://scripts/tasking/TaskManager.cs" id="1_ig7tw"]
+[ext_resource type="Script" path="res://scripts/tasking/TaskManager.cs" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://bg40tvr77cjyb" path="res://ui_navigation_bar.tscn" id="2_0xm2m"]
 
 [node name="Main" type="Node"]
 
 [node name="Task" type="Node" parent="."]
 script = ExtResource("1_ig7tw")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="NavigationBar" parent="UI" instance=ExtResource("2_0xm2m")]

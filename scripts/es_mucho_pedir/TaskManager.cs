@@ -8,7 +8,11 @@ public partial class TaskManager : Node
 {
 	public static void Add(Task task)
 	{
-		DateTime dateKey = new(task.Date.Year, task.Date.Month, task.Date.Day);
+		DateTime dateKey = new(
+			task.Date.Year,
+			task.Date.Month,
+			task.Date.Day
+		);
 
 		if (s_instance._taskCalendar.TryGetValue(dateKey, out List<Task> dailyTasks))
 		{
@@ -21,7 +25,11 @@ public partial class TaskManager : Node
 
 	public static void Remove(Task task)
 	{
-		DateTime dateKey = new(task.Date.Year, task.Date.Month, task.Date.Day);
+		DateTime dateKey = new(
+			task.Date.Year,
+			task.Date.Month,
+			task.Date.Day
+		);
 
 		if (!s_instance._taskCalendar.TryGetValue(dateKey, out List<Task> dailyTasks))
 		{
