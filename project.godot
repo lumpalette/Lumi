@@ -11,9 +11,15 @@ config_version=5
 [application]
 
 config/name="Lumi"
+<<<<<<< Updated upstream
 run/main_scene="uid://dtaupowuk177h"
 config/features=PackedStringArray("4.5", "C#", "Mobile")
 config/icon="res://textures/icon.svg"
+=======
+run/main_scene="uid://5veixmkhw3op"
+config/features=PackedStringArray("4.5", "C#", "Mobile")
+config/icon="res://icon.svg"
+>>>>>>> Stashed changes
 
 [display]
 
