@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-namespace PincheItzel;
+namespace PincheItzel.EsMuchoPedir;
 
 public class Task
 {
@@ -12,6 +12,4 @@ public class Task
 	public Color Color { get; set; }
 
 	public DateTime Date { get; set; }
-
-	public int Hour { get; set; }
 }

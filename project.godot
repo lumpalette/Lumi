@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="Lumi"
-config/features=PackedStringArray("4.5", "Mobile")
-config/icon="res://icon.svg"
+run/main_scene="uid://dtaupowuk177h"
+config/features=PackedStringArray("4.5", "C#", "Mobile")
+config/icon="res://textures/icon.svg"
 
 [display]
 

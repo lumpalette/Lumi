@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://dtaupowuk177h"]
+[gd_scene load_steps=2 format=3 uid="uid://dtaupowuk177h"]
+
+[ext_resource type="Script" uid="uid://dg4p5vdxwnv44" path="res://scripts/tasking/TaskManager.cs" id="1_ig7tw"]
 
 [node name="Main" type="Node"]
+
+[node name="Task" type="Node" parent="."]
+script = ExtResource("1_ig7tw")
